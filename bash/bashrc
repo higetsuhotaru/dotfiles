@@ -37,3 +37,6 @@ export HISTCONTROL=erasedups
 # Share the history across multiple shells
 shopt -s histappend
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+# Set some common directories, you can type `cd subdir` at any position, bash will automatically look `subdir` up in the subdirectories ot the path list of `CDPATH`
+export CDPATH=".:~:~/workspace"
