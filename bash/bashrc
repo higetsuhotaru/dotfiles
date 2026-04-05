@@ -33,3 +33,7 @@ export HISTFILESIZE=20000
 
 # Erase the duplicates of the history records
 export HISTCONTROL=erasedups
+
+# Share the history across multiple shells
+shopt -s histappend
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
