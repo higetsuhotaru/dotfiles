@@ -30,3 +30,6 @@ set -o vi
 # Set the capacity of the history records
 export HISTSIZE=10000
 export HISTFILESIZE=20000
+
+# Erase the duplicates of the history records
+export HISTCONTROL=erasedups
