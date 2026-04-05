@@ -43,3 +43,6 @@ export CDPATH=".:~:~/workspace"
 
 # Typing the directory name instead of prepending `cd` will automatically go into the directory
 shopt -s autocd
+
+# Revise typo 
+shopt -s cdspell
