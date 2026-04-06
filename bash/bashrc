@@ -46,3 +46,7 @@ shopt -s autocd
 
 # Revise typo 
 shopt -s cdspell
+
+# Set alias - ls
+alias ll='ls -lhF --color=auto'
+alias la='ls -lhAF --color=auto'
