@@ -48,5 +48,5 @@ shopt -s autocd
 shopt -s cdspell
 
 # Set alias - ls
-alias ll='ls -lhF --color=auto'
-alias la='ls -lhAF --color=auto'
+alias ll='eza -lF --icons'
+alias la='eza -lAF --icons'
