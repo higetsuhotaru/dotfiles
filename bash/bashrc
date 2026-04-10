@@ -50,3 +50,11 @@ shopt -s cdspell
 # Set alias - ls
 alias ll='eza -lF --icons'
 alias la='eza -lAF --icons'
+
+# Integrate zoxide with fzf
+zi() {
+ local dir
+ dir=$(zoxide query -l | fzf --preview 'ls -la {}') && z "$dir"
+}
+
+eval "$(zoxide init bash)"
