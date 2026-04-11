@@ -50,6 +50,7 @@ export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 # Set alias - ls
 alias ll='eza -lF --icons'
 alias la='eza -lAF --icons'
+alias lst='eza -lrF --icons --sort=size --total-size'
 
 # Integrate zoxide with fzf
 zi() {
