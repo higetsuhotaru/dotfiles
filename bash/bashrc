@@ -48,9 +48,9 @@ export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 # shopt -s cdspell
 
 # Set alias - ls
-alias ll='eza -lF --icons'
-alias la='eza -lAF --icons'
-alias lst='eza -lrF --icons --sort=size --total-size'
+alias ll='eza -lF --icons --time-style=iso'
+alias la='eza -lAF --icons --time-style=iso'
+alias lst='eza -lrF --icons --sort=size --total-size --time-style=iso'
 
 # Integrate zoxide with fzf
 zi() {
